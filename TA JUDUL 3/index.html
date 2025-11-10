@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NATECH - Solusi Digital untuk Bisnis Modern</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#E3F2FD] text-[#0D47A1]">
+
+  <!--header/navigation-->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-2xl font-bold text-[#0D47A1]">NATECH</div>
+      <nav class="hidden md:flex space-x-6 text-[#0D47A1] font-medium">
+        <a href="#hero" class="hover:text-[#1565C0] transition">Beranda</a>
+        <a href="#features" class="hover:text-[#1565C0] transition">Fitur</a>
+        <a href="#about" class="hover:text-[#1565C0] transition">Tentang</a>
+        <a href="#contact" class="hover:text-[#1565C0] transition">Kontak</a>
+      </nav>
+      <button class="md:hidden text-2xl text-[#0D47A1]">&#9776;</button>
+    </div>
+  </header>
+
+  <!--hero section-->
+  <section id="hero" class="bg-[#BBDEFB] text-[#0D47A1] py-32 text-center mt-16">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Bangun Bisnis Lebih Cerdas Bersama NATECH</h1>
+    <p class="text-lg mb-8 text-[#1565C0]">Kami menghadirkan solusi digital yang membantu bisnis berkembang dan lebih efisien di era teknologi.</p>
+    <a href="#contact" class="bg-[#0D47A1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1565C0] transition">Hubungi Kami</a>
+  </section>
+
+  <!--features section -->
+  <section id="features" class="py-20 bg-[#E3F2FD] text-center">
+    <h2 class="text-3xl font-bold mb-10 text-[#0D47A1]">Fitur Utama Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-[#E1F5FE] p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="https://img.icons8.com/ios-filled/50/0D47A1/artificial-intelligence.png" alt="AI" class="mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Teknologi Cerdas</h3>
+        <p>Kami menggunakan sistem berbasis AI untuk membantu bisnis mengambil keputusan lebih cepat dan akurat.</p>
+      </div>
+      <div class="bg-[#E1F5FE] p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="https://img.icons8.com/ios-filled/50/0D47A1/cloud.png" alt="Cloud" class="mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Integrasi Cloud</h3>
+        <p>Simpan dan kelola data dengan mudah lewat layanan cloud yang aman dan bisa diakses kapan saja.</p>
+      </div>
+      <div class="bg-[#E1F5FE] p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="https://img.icons8.com/ios-filled/50/0D47A1/security-checked.png" alt="Security" class="mx-auto mb-4">
+        <h3 class="text-xl font-semibold mb-2">Keamanan Terjamin</h3>
+        <p>Data dan sistem Anda terlindungi dengan enkripsi dan keamanan berlapis dari tim NATECH.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--about section-->
+  <section id="about" class="py-20 text-center bg-[#BBDEFB]">
+    <h2 class="text-3xl font-bold mb-6 text-[#0D47A1]">Tentang NATECH</h2>
+    <p class="max-w-3xl mx-auto text-lg text-[#1565C0]">
+      NATECH adalah perusahaan teknologi yang bergerak di bidang pengembangan sistem digital dan solusi berbasis AI.
+      Kami percaya bahwa teknologi bukan hanya alat, tapi juga jembatan untuk membuat bisnis lebih efisien dan mudah dijangkau oleh semua orang.
+      Dengan tim yang berpengalaman dan bersemangat, kami terus berinovasi untuk menciptakan layanan yang relevan dan bermanfaat.
+    </p>
+  </section>
+
+  <!--form contact-->
+  <section id="contact" class="py-20 bg-[#E3F2FD]">
+    <h2 class="text-3xl font-bold text-center mb-10 text-[#0D47A1]">Hubungi Kami</h2>
+    <form class="max-w-lg mx-auto bg-[#BBDEFB] p-8 rounded-xl shadow-md space-y-4">
+      <input type="text" placeholder="Nama Lengkap" class="w-full border border-blue-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      <input type="email" placeholder="Alamat Email" class="w-full border border-blue-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      <textarea placeholder="Tulis pesan Anda di sini..." rows="4" class="w-full border border-blue-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+      <button type="submit" class="w-full bg-[#0D47A1] text-white py-3 rounded-lg font-semibold hover:bg-[#1565C0] transition">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!--footer-->
+  <footer class="bg-[#0D47A1] text-white py-10 text-center">
+    <div class="max-w-5xl mx-auto space-y-6">
+
+      <div>
+        <h3 class="font-semibold text-lg mb-2">Ikuti Kami</h3>
+        <div class="flex justify-center space-x-6">
+          <a href="https://www.instagram.com" target="_blank" class="hover:text-blue-200 transition">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank" class="hover:text-blue-200 transition">LinkedIn</a>
+          <a href="https://www.twitter.com" target="_blank" class="hover:text-blue-200 transition">Twitter</a>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <p class="text-sm mt-6">&copy; 2025 NATECH. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
