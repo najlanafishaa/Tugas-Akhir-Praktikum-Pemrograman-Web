@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="layout">
+
+    <section class="card calc-card" aria-label="Kalkulator">
+      <header class="card-header">
+        <h1>Kalkulator </h1>
+        <div class="mem-ind">Mem: <span id="mem-ind">0</span></div>
+      </header>
+
+      <div class="display-panel" aria-live="polite">
+        <div id="expression" class="expression"></div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="buttons" id="buttons" role="group" aria-label="tombol kalkulator">
+        <button class="btn mem" id="mc">MC</button>
+        <button class="btn mem" id="mr">MR</button>
+        <button class="btn mem" id="mminus">M-</button>
+        <button class="btn mem" id="mplus">M+</button>
+
+        <button class="btn op" id="clearEntry" data-action="CE">CE</button>
+        <button class="btn op" id="clearAll" data-action="C">C</button>
+        <button class="btn op" id="backspace">⌫</button>
+        <button class="btn op" data-op="÷">÷</button>
+
+        <button class="btn num" data-num="7">7</button>
+        <button class="btn num" data-num="8">8</button>
+        <button class="btn num" data-num="9">9</button>
+        <button class="btn op" data-op="×">×</button>
+
+        <button class="btn num" data-num="4">4</button>
+        <button class="btn num" data-num="5">5</button>
+        <button class="btn num" data-num="6">6</button>
+        <button class="btn op" data-op="-">−</button>
+
+        <button class="btn num" data-num="1">1</button>
+        <button class="btn num" data-num="2">2</button>
+        <button class="btn num" data-num="3">3</button>
+        <button class="btn op" data-op="+">+</button>
+
+        <button class="btn wide num" data-num="0">0</button>
+        <button class="btn" id="dot">.</button>
+        <button class="btn accent" id="equals">=</button>
+      </div>
+    </section>
+
+    <aside class="card history-card" aria-label="Riwayat perhitungan">
+      <header>
+        <h2>Riwayat</h2>
+      </header>
+
+
+      <div id="historyList" class="history-list" role="list" aria-live="polite">
+        <div class="empty">Belum ada riwayat</div>
+      </div>
+      <div class="history-actions">
+        <button id="clearHistory" class="btn small">Hapus semua</button>
+      </div>
+    </aside>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

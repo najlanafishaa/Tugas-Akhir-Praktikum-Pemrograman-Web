@@ -1,0 +1,117 @@
+:root{
+  --bg: #f4f4f6;
+  --panel: #fff;
+  --text: #222;
+  --muted: #666;
+
+  --pink: #ffd7ec;
+  --pink-text: #b30055;
+
+  --blue: #d9ecff;
+  --blue-text: #004c9b;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  font-family: Inter, Arial, sans-serif;
+  color:var(--text);
+  padding:18px;
+  display:flex;
+  justify-content:center;
+}
+
+.layout{
+  width:100%;
+  max-width:980px;
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+.card{
+  background:var(--panel);
+  border-radius:12px;
+  padding:16px;
+  box-shadow:0 6px 18px rgba(20,20,30,0.06);
+}
+
+.calc-card{
+  width:100%;
+  max-width:420px;
+}
+
+.card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+.card-header h1{font-size:18px;margin:0}
+.mem-ind{font-size:13px;color:var(--muted)}
+
+.display-panel{
+  background:#f7f7f8;
+  border-radius:8px;
+  padding:12px;
+  margin-bottom:12px;
+  min-height:64px;
+}
+.expression{font-size:14px;color:var(--muted);min-height:18px;word-break:break-all}
+.result{font-size:28px;font-weight:700;color:var(--text);min-height:34px}
+
+.buttons{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.btn{
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+  background:#f1f1f1;
+  transition:transform .06s, box-shadow .06s;
+}
+.btn:active{transform:translateY(1px)}
+
+.btn.mem{background:#fff7e6}
+.btn.op{background:var(--pink); color:var(--pink-text); font-weight:600}
+.btn.accent{background:var(--blue); color:var(--blue-text); font-weight:700}
+.btn.wide{grid-column:span 2}
+
+.history-card{width:320px}
+.history-card h2{margin:0 0 10px 0;font-size:16px}
+.screenshot-wrap{margin-bottom:10px}
+.screenshot{width:100%;border-radius:8px;display:block}
+
+.history-list{
+  background:#fafafa;
+  border-radius:8px;
+  padding:10px;
+  max-height:420px;
+  overflow:auto;
+  font-size:14px;
+}
+.history-item{
+  display:flex;
+  justify-content:space-between;
+  padding:6px 4px;
+  border-bottom:1px solid #eee;
+  align-items:center;
+}
+.history-item b{font-weight:600}
+.empty{color:var(--muted);}
+
+.history-actions{margin-top:10px;text-align:right}
+.btn.small{padding:8px 10px;font-size:13px}
+
+@media (max-width:700px){
+  .layout{flex-direction:column;align-items:center;padding-bottom:30px}
+  .history-card{width:100%;max-width:420px}
+  .calc-card{width:100%;max-width:420px}
+  .history-list{max-height:300px}
+}
